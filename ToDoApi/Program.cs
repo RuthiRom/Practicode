@@ -11,16 +11,16 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-if (app.Environment.IsDevelopment())
-{
+//if (app.Environment.IsDevelopment())
+//{
     app.UseSwagger();
     app.UseSwaggerUI();
-}
+//}
 
 app.UseCors(builder => builder
      .AllowAnyOrigin()
      .AllowAnyMethod()
-     .AllowAnyHeader());   
+     .AllowAnyHeader());
 
 app.MapGet("/items", async (ToDoDbContext db) => await db.Items.ToListAsync());
 
@@ -59,5 +59,7 @@ app.MapDelete("/items/{id}", async (int Id, ToDoDbContext db) =>
     }
     return Results.NotFound();
 });
+
+app.MapGet("/", () => "ToDoApi server is running!");
 
 app.Run();
