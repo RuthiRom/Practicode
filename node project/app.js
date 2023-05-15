@@ -1,4 +1,4 @@
-// import "api" 
+ import "api" 
 
 const sdk = require('api')('@render-api/v1.0#dnrc1ulf088q9j');
 
