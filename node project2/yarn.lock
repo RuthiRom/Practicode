@@ -1366,10 +1366,10 @@ node-readfiles@^0.2.0:
   dependencies:
     es6-promise "^3.2.1"
 
-node@^16.20.0:
-  version "16.20.0"
-  resolved "https://registry.npmjs.org/node/-/node-16.20.0.tgz"
-  integrity sha512-dom1A0xPnc1qzE+voYGswg3afb5QzlQxsPqE2b94BUcZZ6I5+v1EzqV0wHo7mXM1YzFTJOLshOwyAlouNEk3tA==
+node@^16.16.0:
+  version "16.16.0"
+  resolved "https://registry.npmjs.org/node/-/node-16.16.0.tgz"
+  integrity sha512-I0NJaiQZ443wBqHUfIOx/EjdAO3uP1frg96pLEvrTv9tMyVDgSURYX1x69lNTLaJAF4pCifRwCHEFubN3/K/iQ==
   dependencies:
     node-bin-setup "^1.0.0"
 
